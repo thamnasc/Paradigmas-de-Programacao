@@ -1,4 +1,12 @@
-import java.util.Scanner;
+/*
+1) Implemente uma classe Contador que encapsule um atributo usado para
+contagem de itens ou eventos. A classe deve conter dois construtores, métodos
+get/set e outros métodos para:
+a) Zerar o valor do contador
+b) Incrementar o valor do contador
+c) Decrementar o valor do contador (assegure que o valor do contador nunca
+fique com valor negativo)
+*/
 
 public class Ex1
 {
