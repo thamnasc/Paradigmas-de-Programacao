@@ -15,14 +15,14 @@ public class FuncHorista extends Funcionario
 
     public void setValorHora(float valor)
     {
-        if(valor >= 6.5f)
-            this.setValorHora(valor);
+        if(valor >= 6.5)
+            this.valorHora = valor;
     }
 
     public void setHoras(int horas)
     {
         if(horas >= 40)
-            this.setHoras(horas);
+            this.horas = horas;
     }
 
     public float getValorHora()
