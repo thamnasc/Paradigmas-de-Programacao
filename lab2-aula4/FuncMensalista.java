@@ -28,4 +28,10 @@ public class FuncMensalista extends Funcionario
     {
         return this.salario;
     }
+
+    @Override
+    public float calcularSalarioFinal()
+    {
+        return salario;
+    }
 }

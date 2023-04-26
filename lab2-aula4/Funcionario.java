@@ -65,4 +65,9 @@ public class Funcionario
             "Data de contratação: " + this.getDataContr() + "\n" +
             (this.estrangeiro ? "É estrangeiro" : "Não é estrangeiro"); 
     }
+
+    public float calcularSalarioFinal()
+    {
+        return 0.0f;
+    }
 }

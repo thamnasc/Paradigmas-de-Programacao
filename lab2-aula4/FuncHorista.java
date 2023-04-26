@@ -44,4 +44,10 @@ public class FuncHorista extends Funcionario
     {
         return this.horas;
     }
+
+    @Override
+    public float calcularSalarioFinal()
+    {
+        return horas * valorHora;
+    }
 }
