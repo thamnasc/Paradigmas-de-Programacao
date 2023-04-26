@@ -15,13 +15,15 @@ public class Ex1
     {
         Data data = new Data((byte) 14, (byte) 4, (short) 1990);
         FuncHorista func = new FuncHorista("Fulana", 1, data, true, 6.5f, 42);
+        Funcionario func2 = new Funcionario("Fulana", 1, data, true);
 
-        System.out.println(func.getNome());
+       /*  System.out.println(func.getNome());
         System.out.println(func.getMatricula());
         System.out.println(func.getDataContr());
         System.out.println(func.isEstrangeiro());
         System.out.println(func.getValorHora());
-        System.out.println(func.getHoras());
+        System.out.println(func.getHoras()); */
 
+        System.out.println(func2.toString());
     }
 }
