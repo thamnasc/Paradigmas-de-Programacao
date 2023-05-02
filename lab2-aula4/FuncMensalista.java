@@ -7,6 +7,16 @@ public class FuncMensalista extends Funcionario
         super(nome, matricula, dataContr, estrangeiro);
         this.setSalario(salario);
     }
+    
+    public FuncMensalista(String nome, int matricula, float salario)
+    {
+        this(nome, matricula, null, false, salario);
+    }
+
+    public FuncMensalista(String nome, int matricula)
+    {
+        this(nome, matricula, null, false, 0.0f);
+    }
 
     public void setSalario(float salario)
     {
@@ -17,5 +27,11 @@ public class FuncMensalista extends Funcionario
     public float getSalario()
     {
         return this.salario;
+    }
+
+    @Override
+    public float calcularSalarioFinal()
+    {
+        return salario;
     }
 }

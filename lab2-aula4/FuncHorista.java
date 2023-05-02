@@ -13,6 +13,16 @@ public class FuncHorista extends Funcionario
         this.setHoras(horas);
     }
 
+    public FuncHorista(String nome, int matricula, float valor, int horas)
+    {
+        this(nome, matricula, null, false, valor, horas);
+    }
+
+    public FuncHorista(String nome, int matricula)
+    {
+        this(nome, matricula, null, false, 0.0f, 0);
+    }
+
     public void setValorHora(float valor)
     {
         if(valor >= 6.5)
@@ -33,5 +43,11 @@ public class FuncHorista extends Funcionario
     public int getHoras()
     {
         return this.horas;
+    }
+
+    @Override
+    public float calcularSalarioFinal()
+    {
+        return horas * valorHora;
     }
 }

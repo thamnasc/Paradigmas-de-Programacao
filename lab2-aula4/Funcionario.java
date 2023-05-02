@@ -57,4 +57,17 @@ public class Funcionario
     {
         return this.estrangeiro;
     }
+
+    public String toString()
+    {
+        return "Nome: " + this.nome + "\n" +
+            "Matricula: " + this.matricula + "\n" +
+            "Data de contratação: " + this.getDataContr() + "\n" +
+            (this.estrangeiro ? "É estrangeiro" : "Não é estrangeiro"); 
+    }
+
+    public float calcularSalarioFinal()
+    {
+        return 0.0f;
+    }
 }
