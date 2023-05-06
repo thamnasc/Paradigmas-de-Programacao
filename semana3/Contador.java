@@ -16,7 +16,7 @@ public class Contador {
 
     public Contador(int cont)
     {
-        setCont(cont);
+        this.setCont(cont);
     }
 
     public int getCont()
@@ -32,17 +32,17 @@ public class Contador {
 
     public void zerar()
     {
-        setCont(0);
+        this.setCont(0);
     }
 
     public void incrementar()
     {
-        setCont(this.cont+1);
+        this.setCont(this.cont+1);
     }
 
     public void decrementar()
     {
-        setCont(this.cont-1);
+        this.setCont(this.cont-1);
     }
 
     public String toString()
