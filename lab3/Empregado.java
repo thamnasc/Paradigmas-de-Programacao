@@ -30,24 +30,25 @@ public class Empregado implements Comparable<Empregado>
     }
 
     //método abstrato da interface precisa ser implementado pela classe não abstrata!
+    //para ordenar pelo salario
     //public int compareTo (Empregado e)
     //{
-    //    if(this.salario < e.salario) // inverte - ordem decrescente
+    //    if(this.salario < e.salario) // inverte > para ordenar decrescentemente
     //        return -1;
-    //    else if(this.salario > e.salario) // inverte - ordem decrescente
+    //    else if(this.salario > e.salario) // inverte < para ordenar decrescentemente
     //        return 1;
     //    else // se for igual
     //        return 0;
     //}
 
-    //se for para ordenar pelo nome:
+    //se for para ordenar pelo nome
     public int compareTo (Empregado e)
-    {//compareTo
-        if(this.nome.charAt(0) < e.nome.charAt(0)) // inverte - ordem decrescente
-            return -1;
-        else if(this.nome.charAt(0) > e.nome.charAt(0)) // inverte - ordem decrescente
-            return 1;
-        else // se for igual
-            return 0;
+    {
+        return this.nome.compareTo(e.getNome());
+        // retorna 0 se for igual
+        // retorna 1 se this.nome for depois no alfabeto
+        // retorna -1 se e.getNome() for depois no alfabeto
+
+        // em termos práticos: ordena em ordem alfabética!
     }
 }
