@@ -6,6 +6,7 @@ tipo desta classe.
     3. Playlist de música (adicionar ou excluir uma música da playlist e guardar o número)
     4. Álbum de fotos
     5. Guarda-roupa
+    6. Hábito (para contabilizar dias seguidos)
 */
 
 public class Contador {
