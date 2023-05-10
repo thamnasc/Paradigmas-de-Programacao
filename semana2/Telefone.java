@@ -21,7 +21,7 @@ public class Telefone
             this.ddi = ddi; 
     }
 
-    public void setDdd(int ddd)
+    public void setDdd(short ddd)
     {
         if (ddd >= 11 && ddd <= 99)
             this.ddd = ddd;
@@ -29,9 +29,14 @@ public class Telefone
 
     public void setNumero(long numero)
     {
-        int digs = Long.toString(numero).length()
+        int digs = Long.toString(numero).length();
 
         if(digs >= 9)
             this.numero = numero;
+    }
+
+    public String toString()
+    {
+        return String.format("+%d %d %d", this.ddi, this.ddd, this.numero);
     }
 }
